@@ -271,4 +271,169 @@ Built with obsessive attention to detail. Every pixel, every animation, every fo
 
 [⬆ Back to Top](#zenit--reimagined-productivity)
 
+---
+
+## 📸 App Screenshots
+
+### Home Dashboard
+The heart of Zenit - a beautifully animated dashboard with glassmorphism cards showing:
+- Dynamic greeting based on time of day
+- Today's focus session timer with animated circular progress ring
+- Live task counter with swipe-to-complete gestures
+- Floating mood journal entries with emoji indicators
+- Quick access to all 5 main modules via custom animated tab bar
+
+### Focus Timer
+Pomodoro reimagined:
+- Massive 25-minute countdown with breathing animations
+- Gradient progress ring that pulses during active sessions
+- Session history with streak tracking
+- Background blur that intensifies as you focus
+- Haptic feedback on start/pause/complete
+
+### Smart Tasks
+Task management without the bloat:
+- Swipe right to complete, left to delete (with undo)
+- Priority-based color coding (High=Rose, Medium=Accent, Low=Mint)
+- Tag-based filtering with beautiful chip UI
+- Floating action button with spring animations
+- Smart date picker with "Today", "Tomorrow", "This Week" shortcuts
+
+### Journal
+Mood tracking meets mindfulness:
+- 5 mood emojis (Amazing, Happy, Neutral, Sad, Stressed)
+- Horizontal scrollable mood filters
+- Expandable entry cards with smooth animations
+- Journal streak counter with flame icon
+- Search functionality across all entries
+
+### Insights
+Your productivity at a glance:
+- Circular productivity score (0-100) with gradient stroke
+- Weekly focus time bar chart (iOS 16+ uses Swift Charts)
+- 4-stat grid: Tasks Done, Focus Hours, Streak, Habits
+- Top 5 habits with completion rate progress bars
+- Mood trends visualization
+- Timeframe switcher (Week/Month/Year)
+
+---
+
+## 📥 Download & Installation
+
+### Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/gedeonkoh/Zenit-iOS.git
+
+# Navigate to project directory
+cd Zenit-iOS
+
+# Open in Xcode
+open Zenit.xcodeproj
+```
+
+### Requirements
+- **Xcode**: 15.0+
+- **iOS**: 16.0+
+- **Swift**: 5.0+
+- **macOS**: Monterey 12.0+ (for development)
+
+### Building the App
+
+1. Open `Zenit.xcodeproj` in Xcode
+2. Select your target device (iPhone simulator or physical device)
+3. Press `Cmd + R` to build and run
+4. For physical device: Set your development team in Signing & Capabilities
+
+### Project Structure
+```
+Zenit-iOS/
+├── Zenit.xcodeproj/       # Xcode project file
+├── Zenit/
+│   ├── ZenitApp.swift      # App entry point
+│   ├── ContentView.swift   # Main tab navigation
+│   ├── AppStore.swift      # State management & data models
+│   ├── Design/
+│   │   └── DesignSystem.swift  # Colors, fonts, glass cards
+│   └── Views/
+│       ├── Home/
+│       │   └── HomeView.swift
+│       ├── Tasks/
+│       │   └── TasksView.swift
+│       ├── Focus/
+│       │   └── FocusView.swift
+│       ├── Journal/
+│       │   └── JournalView.swift
+│       └── Insights/
+│           └── InsightsView.swift
+└── README.md              # This file
+```
+
+---
+
+## 🎨 Design System
+
+### Colors
+- **Primary**: `#667EEA` (Indigo Blue)
+- **Accent**: `#F093FB` / `#F5576C` (Pink-Rose Gradient)
+- **Background**: Radial gradient from `#1a1f3a` to `#0a0e1a`
+- **Glass**: `rgba(255, 255, 255, 0.08)` with 16px blur
+
+### Typography
+- **Large Title**: SF Pro Rounded, 32pt, Bold
+- **Headline**: SF Pro, 20pt, Semibold  
+- **Body**: SF Pro, 16pt, Regular
+- **Caption**: SF Pro, 13pt, Medium
+
+### Animations
+- **Spring Response**: 0.3s
+- **Damping Fraction**: 0.7-0.8
+- **Micro-interactions**: 120ms ease-in-out
+- **Page Transitions**: 300ms spring
+
+---
+
+## 🛠️ Technical Highlights
+
+- **SwiftUI**: 100% SwiftUI, no UIKit
+- **Combine**: Reactive state management with `@Published` properties
+- **Swift Charts**: Native iOS 16+ charts for data visualization
+- **SF Symbols**: 50+ system icons with custom weights
+- **Haptic Feedback**: Strategic haptics for delightful interactions
+- **Dark Mode First**: Designed exclusively for dark mode aesthetics
+- **No Dependencies**: Pure SwiftUI, no external packages
+
+---
+
+## 👨‍💻 Developer
+
+Created with obsessive attention to detail and a love for minimalist design.
+
+**Repository**: [github.com/gedeonkoh/Zenit-iOS](https://github.com/gedeonkoh/Zenit-iOS)
+
+---
+
+## ❤️ Why Zenit?
+
+Because productivity apps don't have to be ugly. Because minimalism doesn't mean compromising on features. Because every pixel, every animation, every font weight matters.
+
+Zenit is the productivity app I wanted to use but couldn't find. So I built it.
+
+**Download the code. Build it. Use it. Break it. Fork it. Make it yours.**
+
+That's the spirit of open source. That's the zenith of productivity.
+
+---
+
+<div align="center">
+
+**[⬆ Back to Top](#zenit---reimagined-productivity)**
+
+**Built with 💙 and SwiftUI**
+
+**"The details are not the details. They make the design."** ~ Charles Eames
+
+</div>
+
 </div>
