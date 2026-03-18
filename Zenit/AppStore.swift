@@ -67,6 +67,38 @@ class AppStore: ObservableObject {
     @Published var focusSessions: [FocusSession] = []
     @Published var streakCount: Int = 4
     @Published var todayFocusMinutes: Int = 47
+        @Published var journalStreak: Int = 7
+    @Published var productivityScore: Double = 82.0
+    @Published var completedTasksCount: Int = 24
+    @Published var totalFocusHours: Double = 12.5
+    @Published var completedHabitsCount: Int = 5
+    @Published var totalHabitsCount: Int = 7
+    
+    var weeklyFocusData: [FocusDataPoint] {
+        [
+            FocusDataPoint(day: "Mon", minutes: 95),
+            FocusDataPoint(day: "Tue", minutes: 110),
+            FocusDataPoint(day: "Wed", minutes: 85),
+            FocusDataPoint(day: "Thu", minutes: 120),
+            FocusDataPoint(day: "Fri", minutes: 100),
+            FocusDataPoint(day: "Sat", minutes: 75),
+            FocusDataPoint(day: "Sun", minutes: 60)
+        ]
+    }
+    
+    var topHabits: [HabitStat] {
+        [
+            HabitStat(name: "Morning Exercise", icon: "💪", completionRate: 0.95),
+            HabitStat(name: "Meditation", icon: "🧘", completionRate: 0.88),
+            HabitStat(name: "Reading", icon: "📚", completionRate: 0.76),
+            HabitStat(name: "Journaling", icon: "✍️", completionRate: 0.84),
+            HabitStat(name: "Hydration", icon: "💧", completionRate: 0.92)
+        ]
+    }
+    
+    func moodCount(for mood: Mood) -> Int {
+        journalEntries.filter { $0.mood == mood }.count
+    }
 
     // Focus timer state
     @Published var timerActive: Bool = false
